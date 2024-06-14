@@ -9,7 +9,7 @@ import traceback
 
 import wandb
 from evil.irl.run_irl import run_irl
-from evil.configs.irl_plus_config import sweep_configuration
+from docker.evil.evil.configs.irl_sweep_config import sweep_configuration
 
 
 def pagent():
@@ -23,7 +23,7 @@ def pagent():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        prog="JAXIRL",
+        prog="EvIL",
     )
     parser.add_argument(
         "-r",

@@ -3,7 +3,7 @@ from evil.utils.utils import CriticAsShaping
 from evil.training.ppo_v2_cont_irl import get_network
 import os
 
-from evil.irl.irl_multi_discr import IRLPlus
+from evil.irl.irl_plus import IRLPlus
 
 # os.environ["XLA_PYTHON_CLIENT_MEM_FRACTION"] = ".20"
 import pickle
@@ -25,7 +25,7 @@ from evil.utils.utils import (
 from evil.training.ppo_v2_cont_irl import (
     make_train as make_train_cont,
 )
-from evil.configs.hyperparam_search_new_shaping import run_config as OUTER_CONFIG
+from evil.configs.evil_config import run_config as OUTER_CONFIG
 from evil.training.ppo_v2_irl import make_train
 import matplotlib.pyplot as plt
 import numpy as np
@@ -95,7 +95,7 @@ env_info_runs["humanoid"] = {
     "irl_shaped_gens": irl_shaped_gens,
 }
 
-home_dir = "/home/silvias/docker/jaxirl/"
+home_dir = ""
 
 
 def get_expert_obsv_and_actions(
@@ -150,7 +150,6 @@ def get_expert_obsv_and_actions(
         trained_plotting_expert_path = f"{home_dir}/plotting_data/{es_config['env']}_{es_config['backend']}_{num_seeds}_shaped.pkl"
         with open(trained_standard_expert_path, "rb") as f:
             expert_train_out = pickle.load(f)
-            print(expert_train_out.keys())
             try:
                 data_mean = expert_train_out["norm_mean"]
                 data_var = expert_train_out["norm_var"]

@@ -9,7 +9,7 @@ import matplotlib
 import wandb
 from matplotlib import font_manager as fm, pyplot as plt
 
-# font_files = fm.findSystemFonts("/home/silvias/docker/jaxirl/")
+# font_files = fm.findSystemFonts("/home/silvias/docker/evil/")
 # for font_file in font_files:
 #     fm.fontManager.addfont(font_file)
 # matplotlib.rc("font", family="Palatino Linotype")

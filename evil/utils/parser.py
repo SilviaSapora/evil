@@ -3,7 +3,7 @@ import argparse
 
 def get_parser():
     parser = argparse.ArgumentParser(
-        prog="JAXIRL",
+        prog="EvIL",
     )
 
     parser.add_argument(

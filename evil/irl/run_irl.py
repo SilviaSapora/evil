@@ -1,6 +1,6 @@
 import os
 import pickle
-from evil.irl.irl_multi_discr import IRLPlus
+from evil.irl.irl_plus import IRLPlus
 from evil.utils.parser import get_parser
 from evil.utils.plot import plot
 

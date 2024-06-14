@@ -2,7 +2,7 @@ import os
 import pickle
 import time
 from evil.utils.utils import get_expert_obsv_and_actions
-from evil.irl.irl_multi_discr import IRLPlus
+from evil.irl.irl_plus import IRLPlus
 from evil.utils.parser import get_parser
 from evil.utils.plot import plot
 import evosax

@@ -9,7 +9,7 @@ from evil.configs.evil_config import run_config
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        prog="JAXIRL",
+        prog="EvIL",
     )
     parser.add_argument(
         "-e",

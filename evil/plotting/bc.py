@@ -1,21 +1,16 @@
 from evil.irl.bc import BC
 import jax
-import importlib
-import jaxirl.training.ppo_v2_cont_irl
 
-importlib.reload(jaxirl.training.ppo_v2_cont_irl)
 from evil.training.ppo_v2_cont_irl import eval as eval_cont
 import os
 
-from evil.irl.irl_multi_discr import IRLPlus
+from evil.irl.irl_plus import IRLPlus
 import pickle
-import evosax
 
 import jax
 import jax.numpy as jnp
 from evil.training.wrappers import TremblingHandWrapper
 from evil.utils.env_utils import get_env
-from evil.utils.plot import setup_plot
 from evil.utils.utils import (
     RewardNetwork,
     RewardNetworkPenalty,
@@ -27,8 +22,6 @@ from evil.utils.utils import (
 from evil.training.ppo_v2_cont_irl import make_train as make_train_cont, get_network
 from evil.debug.randomize_env_func import randomize_env
 from evil.configs.hyperparam_search_new_shaping import run_config as OUTER_CONFIG
-import matplotlib.pyplot as plt
-import numpy as np
 
 if __name__ == "__main__":
     for env_name in ["hopper", "walker2d", "ant", "humanoid"]:
@@ -41,7 +34,7 @@ if __name__ == "__main__":
         es_config, es_training_config = get_irl_config(
             es_config, original_training_config
         )
-        home_dir = "/home/silvias/docker/jaxirl/"
+        home_dir = "/home/silvias/docker/evil/"
         trained_plotting_expert_path = (
             f"{home_dir}/plotting_data/{es_config['env']}_{es_config['backend']}_5.pkl"
         )
