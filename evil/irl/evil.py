@@ -2,7 +2,7 @@ import os
 import pickle
 import time
 from evil.utils.utils import get_expert_obsv_and_actions
-from evil.irl.irl_multi_discr import IRLMultiDiscr
+from evil.irl.irl_multi_discr import IRLPlus
 from evil.utils.parser import get_parser
 from evil.utils.plot import plot
 import evosax
@@ -123,7 +123,7 @@ def main(es_config=None):
         shap_network_params=None,
         training_config=original_training_config,
     )
-    training_class = IRLMultiDiscr(
+    training_class = IRLPlus(
         env=env,
         env_params=env_params,
         training_config=es_training_config,

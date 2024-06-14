@@ -7,7 +7,7 @@ importlib.reload(jaxirl.training.ppo_v2_cont_irl)
 from evil.training.ppo_v2_cont_irl import eval as eval_cont
 import os
 
-from evil.irl.irl_multi_discr import IRLMultiDiscr
+from evil.irl.irl_multi_discr import IRLPlus
 import pickle
 import evosax
 

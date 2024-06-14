@@ -1,6 +1,6 @@
 import os
 import pickle
-from evil.irl.irl_multi_discr import IRLMultiDiscr
+from evil.irl.irl_multi_discr import IRLPlus
 from evil.utils.parser import get_parser
 from evil.utils.plot import plot
 
@@ -78,7 +78,7 @@ def run_irl(es_config=None):
     )
     es_config, es_training_config = get_irl_config(es_config, original_training_config)
     if es_config["irl_plus"]:
-        irl_method = IRLMultiDiscr
+        irl_method = IRLPlus
     else:
         irl_method = IRL
         es_config["discr_l2_loss"] = 0.0

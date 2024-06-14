@@ -29,7 +29,7 @@ from evil.training.ppo_v2_cont_irl import (
 )
 
 
-class IRLMultiDiscr(ABC):
+class IRLPlus(ABC):
     def __init__(
         self,
         env,
