@@ -29,11 +29,11 @@ On a suite of continuous control tasks, we are able to re-train policies in targ
     <div class="column" align="center">
         <div class="row" align="center">
             <img src="https://github.com/SilviaSapora/evil/blob/main/images/hopper.jpg" alt="hopper" width="40%">
-            <img src="https://github.com/SilviaSapora/evil/blob/main/images/walker.jpg" alt="walker" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/humanoid.jpg" alt="humanoid" width="40%">
         </div>
         <div class="row" align="center">
-            <img src="https://github.com/SilviaSapora/evil/blob/main/images/hopper_irl.jpg" alt="ant" width="40%">
-            <img src="https://github.com/SilviaSapora/evil/blob/main/images/walker_irl.jpg" alt="humanoid" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/hopper_irl.jpg" alt="hopper_irl" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/humanoid_irl.jpg" alt="humanoid_irl" width="40%">
         </div>
     </div>
 </div>
