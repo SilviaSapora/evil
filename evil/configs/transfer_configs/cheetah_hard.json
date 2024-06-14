@@ -1,0 +1,44 @@
+{
+  "joint": {
+    "bthigh": {
+      "damping": {
+        "default": [6],
+        "min": [0],
+        "max": [8]
+      },
+      "stiffness": {
+        "default": [240],
+        "min": [0],
+        "max": [250]
+      }
+    },
+    "fthigh": {
+      "damping": {
+        "default": [6],
+        "min": [0],
+        "max": [8]
+      },
+      "stiffness": {
+        "default": [240],
+        "min": [0],
+        "max": [250]
+      }
+    }
+  },
+  "geom": {
+    "ffoot": {
+      "size": {
+        "default": [0.046, 0.07],
+        "min": [0.04, 0.065],
+        "max": [0.05, 0.075]
+      }
+    },
+    "bfoot": {
+      "size": {
+        "default": [0.046, 0.07],
+        "min": [0.04, 0.065],
+        "max": [0.05, 0.075]
+      }
+    }
+  }
+}

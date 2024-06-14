@@ -1,0 +1,146 @@
+{
+  "geom": {
+    "aux_1_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "aux_2_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "aux_3_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "aux_4_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "left_leg_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "right_leg_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "back_leg_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "rightback_leg_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "left_ankle_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "right_ankle_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "third_ankle_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    },
+    "fourth_ankle_geom": {
+      "size": {
+        "default": [0.08],
+        "min": [0.05],
+        "max": [0.11]
+      }
+    }
+  },
+  "joint": {
+    "hip_1": {
+      "range": {
+        "default": [-30, 30],
+        "min": [-40, 20],
+        "max": [-20, 40]
+      }
+    },
+    "hip_2": {
+      "range": {
+        "default": [-30, 30],
+        "min": [-40, 20],
+        "max": [-20, 40]
+      }
+    },
+    "hip_3": {
+      "range": {
+        "default": [-30, 30],
+        "min": [-40, 20],
+        "max": [-20, 40]
+      }
+    },
+    "hip_4": {
+      "range": {
+        "default": [-30, 30],
+        "min": [-40, 20],
+        "max": [-20, 40]
+      }
+    },
+    "ankle_1": {
+      "range": {
+        "default": [30, 70],
+        "min": [20, 60],
+        "max": [40, 80]
+      }
+    },
+    "ankle_2": {
+      "range": {
+        "default": [-70, -30],
+        "min": [-80, -40],
+        "max": [-60, -20]
+      }
+    },
+    "ankle_3": {
+      "range": {
+        "default": [-70, -30],
+        "min": [-80, -40],
+        "max": [-60, -20]
+      }
+    },
+    "ankle_4": {
+      "range": {
+        "default": [30, 70],
+        "min": [20, 60],
+        "max": [40, 80]
+      }
+    }
+  }
+}

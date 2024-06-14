@@ -1,0 +1,118 @@
+{
+  "geom": {
+    "right_foot": {
+      "size": {
+        "default": [0.075],
+        "min": [0.05],
+        "max": [0.1]
+      }
+    },
+    "left_foot": {
+      "size": {
+        "default": [0.075],
+        "min": [0.05],
+        "max": [0.1]
+      }
+    },
+    "right_thigh1": {
+      "size": {
+        "default": [0.06],
+        "min": [0.03],
+        "max": [0.09]
+      }
+    },
+    "left_thigh1": {
+      "size": {
+        "default": [0.06],
+        "min": [0.03],
+        "max": [0.09]
+      }
+    },
+    "right_uarm1": {
+      "size": {
+        "default": [0.04, 0.16],
+        "min": [0.02, 0.014],
+        "max": [0.06, 0.018]
+      }
+    },
+    "right_larm": {
+      "size": {
+        "default": [0.031],
+        "min": [0.02],
+        "max": [0.04]
+      }
+    },
+    "left_uarm1": {
+      "size": {
+        "default": [0.04, 0.16],
+        "min": [0.02, 0.014],
+        "max": [0.06, 0.018]
+      }
+    },
+    "left_larm": {
+      "size": {
+        "default": [0.031],
+        "min": [0.02],
+        "max": [0.04]
+      }
+    }
+  },
+  "joint": {
+    "right_hip_x": {
+      "range": {
+        "default": [-25, 5],
+        "min": [-60, -20],
+        "max": [0, 30]
+      }
+    },
+    "right_hip_z": {
+      "range": {
+        "default": [-60, 35],
+        "min": [-100, 0],
+        "max": [-20, 60]
+      }
+    },
+    "right_hip_y": {
+      "range": {
+        "default": [-110, 20],
+        "min": [-140, -10],
+        "max": [-80, 50]
+      }
+    },
+    "left_hip_x": {
+      "range": {
+        "default": [-25, 5],
+        "min": [-60, -20],
+        "max": [0, 30]
+      }
+    },
+    "left_hip_z": {
+      "range": {
+        "default": [-60, 35],
+        "min": [-100, 0],
+        "max": [-20, 60]
+      }
+    },
+    "left_hip_y": {
+      "range": {
+        "default": [-110, 20],
+        "min": [-140, -10],
+        "max": [-80, 50]
+      }
+    },
+    "right_knee": {
+      "range": {
+        "default": [-160, -2],
+        "min": [-200, -50],
+        "max": [-100, 50]
+      }
+    },
+    "left_knee": {
+      "range": {
+        "default": [-160, -2],
+        "min": [-200, -50],
+        "max": [-100, 50]
+      }
+    }
+  }
+}
