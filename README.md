@@ -11,13 +11,14 @@
 
 [**Installation**](#install) | [**Setup**](#setup) | [**Algorithms**](#algorithms) | [**Citation**](#citation)
 
-## Inverse Reinforcement Learning in JAX
+## Evolution Strategies for Generalisable Imitation Learning
 
-Contains JAX implementation of algorithms for **inverse reinforcement learning** (IRL).
-Inverse RL is an online approach to imitation learning where we try to **extract a reward function** that makes the expert optimal.
-IRL *doesn't suffer from compounding errors* (like behavioural cloning) and doesn't need expert actions to train (only example trajectories of states). 
-Depending on the environment and hyperparameters, our implementation is about 🔥 100x 🔥 faster than standard IRL implementations in PyTorch (e.g. 3.5 minutes to train a single hopper agent ⚡).
-By running multiple agents in parallel, you can be even faster! (e.g. 200 walker agents can be trained in ~400 minutes on 1 GPU! That's 2 minutes per agent ⚡⚡).
+Often times in imitation learning (IL), the environment we collect expert demonstrations in and the environment we want to deploy our learned policy in aren't exactly the same (e.g. demonstrations collected in simulation but deployment in the real world). Compared to policy-centric approaches to IL like behavioural cloning, reward-centric approaches like **Inverse Reinforcement Learning** (IRL) often better replicate expert behaviour in new environments. 
+This transfer is usually performed by optimising the recovered reward under the dynamics of the target environment. However:
+- we find that modern deep IL algorithms frequently recover rewards which induce policies far weaker than the expert, even in the same environment the demonstrations were collected in
+- these rewards are often quite poorly shaped, necessitating extensive environment interaction to optimise effectively.
+
+We provide simple and scalable fixes to both of these concerns. We find that **reward model ensembles** combined with a slightly different training objective significantly improves re-training and transfer performance. To improve the poorly shaped rewards, we propose a novel **evolution-strategies** based method **EvIL** to optimise for a reward-shaping term that speeds up re-training in the target environment, closing a gap left open by the classical theory of IRL. On a suite of continuous control tasks, we are able to re-train policies in target (and source) environments more interaction-efficiently than prior work.
 
 <div class="collage">
     <div class="column" align="center">
@@ -31,13 +32,6 @@ By running multiple agents in parallel, you can be even faster! (e.g. 200 walker
         </div>
     </div>
 </div>
-
-## A game-theoretic perspective on IRL
-<img src="https://github.com/FLAIROx/jaxirl/blob/main/plots/irl.png" align="left" alt="IRL" width="10%">
-
-IRL is commonly framed as a **two-player zero-sum game** between a policy player and a reward function player. Intuitively, the reward function player tries to pick out differences between the current learner policy and the expert, while the policy player attempts to maximise this reward function to move closer to expert behaviour. This setup is effectively a GAN in the trajectory space, where the reward player is the Discriminator and the policy player is a Generator.
-
-<br/><br/><br/> 
 
 ## Why JAX?
 JAX is a game-changer in the world of machine learning, empowering researchers and developers to train models with unprecedented efficiency and scalability. Here's how it sets a new standard for performance:
