@@ -3,7 +3,7 @@ from evil.utils.utils import CriticAsShaping
 from evil.training.ppo_v2_cont_irl import get_network
 import os
 
-from evil.irl.irl_multi_discr import IRLMultiDiscr
+from evil.irl.irl_multi_discr import IRLPlus
 
 # os.environ["XLA_PYTHON_CLIENT_MEM_FRACTION"] = ".20"
 import pickle
@@ -348,7 +348,7 @@ if __name__ == "__main__":
             0,
             shaping_critic=True,
         )
-        irl_training_class = IRLMultiDiscr(
+        irl_training_class = IRLPlus(
             env=env,
             env_params=env_params,
             training_config=es_training_config,
