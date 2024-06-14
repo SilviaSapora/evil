@@ -24,7 +24,7 @@ We provide simple and scalable fixes to both of these concerns. We find that **r
     <div class="column" align="center">
         <div class="row" align="center">
             <img src="https://github.com/SilviaSapora/evil/blob/main/images/hopper.jpg" alt="hopper" width="40%">
-            <img src="https://github.com/SilviaSapora/evil/blob/main/images/walker2d.jpg" alt="walker" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/walker.jpg" alt="walker" width="40%">
         </div>
         <div class="row" align="center">
             <img src="https://github.com/SilviaSapora/evil/blob/main/images/ant.jpg" alt="ant" width="40%">
