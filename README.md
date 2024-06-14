@@ -23,12 +23,12 @@ We provide simple and scalable fixes to both of these concerns. We find that **r
 <div class="collage">
     <div class="column" align="center">
         <div class="row" align="center">
-            <img src="https://github.com/FLAIROx/jaxirl/blob/main/plots/hopper.png" alt="Hopper" width="40%">
-            <img src="https://github.com/FLAIROx/jaxirl/blob/main/plots/walker2d.png" alt="walker" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/hopper.jpg" alt="hopper" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/walker2d.jpg" alt="walker" width="40%">
         </div>
         <div class="row" align="center">
-            <img src="https://github.com/FLAIROx/jaxirl/blob/main/plots/ant.png" alt="ant" width="40%">
-            <img src="https://github.com/FLAIROx/jaxirl/blob/main/plots/halfcheetah.png" alt="halfcheetah" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/ant.jpg" alt="ant" width="40%">
+            <img src="https://github.com/SilviaSapora/evil/blob/main/images/humanoid.jpg" alt="humanoid" width="40%">
         </div>
     </div>
 </div>
