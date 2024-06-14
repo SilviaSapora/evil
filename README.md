@@ -102,15 +102,24 @@ Our IRL implementation is the [moment matching](https://arxiv.org/abs/2103.03236
 This includes implementation tricks to make learning more stable, including decay on the discriminator and learner learning rates and gradient penalties on the discriminator.
 
 ## Reproduce Results
-Simply run
+Simply run the following commands to reproduce our results.
+To run standard IRL and generate a reward: 
 ```
 python3 evil/scripts/run_irl.py --env env_name -sd 1
 ```
-The script will print the name of the file it saves the reward parameters to. Then:
+For the IRL++ version run: 
+```
+python3 evil/scripts/run_irl.py --env env_name -sd 1 --irl_plus
+```
+The script will print the name of the file it saves the reward parameters to. Then run the following to shape the recovered reward:
 ```
 python3 evil/scripts/run_evil.py --env env_name -sd 1 --reward-filename <REWARD_FILENAME>
 ```
-For both scripts, the default parameters in ```outer_training_configs.py``` and the trained experts in ```experts/``` will be used.
+or the following to shape the original reward:
+```
+python3 evil/scripts/run_evil.py --env env_name -sd 1 --real
+```
+For all scripts, the default parameters in ```outer_training_configs.py``` and the trained experts in ```experts/``` will be used.
 To run a sweep for irl++, you can use the ```evil/scripts/run_sweep.py``` script.
 
 ## Citation

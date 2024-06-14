@@ -37,11 +37,12 @@ if __name__ == "__main__":
     parser.add_argument("--last", action="store_true")
     parser.add_argument("--real", action="store_true")
     parser.add_argument(
-        "--auc_loss_type", choices=["last_irl_return", "avg_episodic_irl_return"]
+        "--reward_type", choices=["shaping", "reward"], default="shaping"
     )
-    parser.add_argument("--reward_type", choices=["shaping", "reward"])
     parser.add_argument("--reward_file", type=str)
-    parser.add_argument("--backend", choices=["positional", "generalized"])
+    parser.add_argument(
+        "--backend", choices=["positional", "generalized"], defaul="positional"
+    )
     parser.add_argument("--across", action="store_true")
     parser.add_argument("-r", "--restart", type=str)
     parser.add_argument("-rg", "--restart_gen", type=int)
@@ -50,7 +51,6 @@ if __name__ == "__main__":
     run_config["seed"] = args.seed
     run_config["env"] = args.env
     run_config["num_updates_two_step"] = args.updates
-    run_config["auc_loss_type"] = args.auc_loss_type
     run_config["backend"] = args.backend
     run_config["restart_filename"] = args.restart
     run_config["restart_gen"] = args.restart_gen

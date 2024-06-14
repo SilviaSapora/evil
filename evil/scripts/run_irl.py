@@ -22,6 +22,9 @@ if __name__ == "__main__":
         type=str,
         choices=["ant", "hopper", "halfcheetah", "walker2d", "humanoid"],
     )
+    parser.add_argument("--irl_plus", action="store_true")
     args = parser.parse_args()
     irl_config["env"] = args.env
+    if args.irl_plus:
+        irl_config["irl_plus"] = True
     run_irl(irl_config)
