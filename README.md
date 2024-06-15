@@ -1,4 +1,4 @@
-<h1 align="center">EvIL: Evolution Strategies for Generalisable Imitation Learning</h1>
+<h1 align="center">😈 EvIL: Evolution Strategies for Generalisable Imitation Learning</h1>
 
 <p align="center">
       <img src="https://img.shields.io/badge/python-3.8_%7C_3.9-blue" />
