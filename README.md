@@ -14,7 +14,7 @@
 ## Evolution Strategies for Generalisable Imitation Learning
 
 <div class="column" align="center">
-      <img src="https://github.com/SilviaSapora/evil/blob/main/images/evil_figg.png" alt="evil" width="70%">
+      <img src="https://github.com/SilviaSapora/evil/blob/main/images/evil_ffig.png" alt="evil" width="70%">
 </div>
 
 Often times in imitation learning (IL), the environment we collect expert demonstrations in and the environment we want to deploy our learned policy in aren't exactly the same (e.g. demonstrations collected in simulation but deployment in the real world). Compared to policy-centric approaches to IL like behavioural cloning, reward-centric approaches like **Inverse Reinforcement Learning** (IRL) often better replicate expert behaviour in new environments. 
