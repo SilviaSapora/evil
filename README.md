@@ -40,7 +40,6 @@ On a suite of continuous control tasks, we are able to re-train policies in targ
             <img src="https://github.com/SilviaSapora/evil/blob/main/images/humanoid_irl.jpg" alt="humanoid_irl" width="40%">
         </div>
         <div class="row" align="center">
-            <img src="https://github.com/SilviaSapora/evil/blob/main/images/hopper_transfer.jpg" alt="hopper_transfer" width="40%">
             <img src="https://github.com/SilviaSapora/evil/blob/main/images/humanoid_transfer.jpg" alt="humanoid_transfer" width="40%">
         </div>
     </div>
